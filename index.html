@@ -8,11 +8,11 @@
 <!-- Windows Phone -->
 <meta content='' name='msapplication-navbutton-color'/>
 <link href='https://fmovies-official.blogspot.com/favicon.ico' rel='icon' type='image/x-icon'/>
-<meta content='https://fmovies.to/' property='og:url'/>
+<meta content='https://yourdomain.com/' property='og:url'/>
 <meta content='playflix1' property='og:title'/>
 <meta content='FMovies - Watch movies online free in full HD without registration. FMovies.to official site.' property='og:description'/>
-<title>FMovies | Watch Movies Online Free on FMovies.to - FMovies Official Site | FMovies Free HD</title>
-<meta content='FMovies - Watch Free Movies Online in HD on FMovies.to | FMovies Official, FMovies 2025/2026 - The best site to watch movies online free. Stream Full HD movies free, no ads, no registration. FMovies.to, FMovie, FMovies free, 123Movies alternative' name='description'/>
+<title>Watch Free Movies Online in HD | FMovies</title>
+<meta content='Stream 10K+ movies and TV shows online for free in HD. No registration required. Find action, comedy, horror, and more on FMovies.' name='description'/>
 <meta content='fmovies, fmovies.to, fmovies to, fmovies is, fmovie, fmoviesto, f movies, fmovies free, fmovies official, fmovies unblocked, fmovies site, fmovies hd, free movies, free movies online, watch movies online free, watch movies online, online movies, movie online, full movies online free, fmovies 2025, fmovies 2026, 123movies, fmovies app, fmovies download, fmovies streaming, watch free movies' name='keywords'/>
 <meta content='FMovies' name='author'/>
 <meta content='index, follow, max-image-preview:large' name='robots'/>
@@ -25,13 +25,18 @@
 <meta content='summary_large_image' name='twitter:card'/>
 <meta content='FMovies | Watch Movies Online Free on FMovies.to' name='twitter:title'/>
 <meta content='Watch free movies online in HD on FMovies.to. Stream latest movies &amp; TV shows free without signup. FMovies official 2026.' name='twitter:description'/>
-<link href='https://fmovies.to' rel='canonical'/>
+<link href='https://yourdomain.com/' rel='canonical'/>
 
 <meta charset='UTF-8'/>
 <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no' name='viewport'/>
 <meta content='yes' name='apple-mobile-web-app-capable'/>
 <meta content='black-translucent' name='apple-mobile-web-app-status-bar-style'/>
 <meta content='#050507' name='theme-color'/>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://image.tmdb.org">
+<link rel="preconnect" href="https://api.themoviedb.org">
 <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css' rel='stylesheet'/>
 <link href='https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&amp;display=swap' rel='stylesheet'/>
 <style>
@@ -80,6 +85,18 @@ FMOVIES v4.0 - OFFICIAL FMOVIES TEMPLATE &#8212; ULTRA PREMIUM STREAMING TEMPLAT
 --shadow-glow: var(--brand-glow);
 --navbar-h: 70px;
 --bottom-nav-h: 60px;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
 }
 /* 2. GLOBAL RESET */
 *, *::before, *::after {
@@ -1098,7 +1115,7 @@ background: linear-gradient(to top, rgba(6,6,8,0.9) 0%, rgba(6,6,8,0.1) 42%, tra
 .fm-footer-social{display:flex;gap:10px;margin-top:16px;}
 .fm-footer-social a{width:36px;height:36px;background:var(--bg-surface-3);border:1px solid var(--border-light);border-radius:50%;display:flex;align-items:center;justify-content:center;color:var(--text-secondary);font-size:14px;transition:var(--transition-fast);}
 .fm-footer-social a:hover{background:var(--brand-primary);border-color:var(--brand-primary);color:white;transform:translateY(-2px);}
-.fm-footer-col h4{font-size:13px;font-weight:800;letter-spacing:1.5px;text-transform:uppercase;color:white;margin-bottom:18px;position:relative;padding-bottom:10px;}
+.fm-footer-col h3{font-size:13px;font-weight:800;letter-spacing:1.5px;text-transform:uppercase;color:white;margin-bottom:18px;position:relative;padding-bottom:10px;}
 .fm-footer-col h4::after{content:'';position:absolute;bottom:0;left:0;width:28px;height:2px;background:var(--brand-primary);border-radius:2px;}
 .fm-footer-links{display:flex;flex-direction:column;gap:10px;}
 .fm-footer-links a{color:var(--text-secondary);font-size:14px;font-weight:500;transition:var(--transition-fast);display:flex;align-items:center;gap:8px;}
@@ -1138,20 +1155,34 @@ background: linear-gradient(to top, rgba(6,6,8,0.9) 0%, rgba(6,6,8,0.1) 42%, tra
 
 
 <!-- FMovies SEO Structured Data -->
-<script type='application/ld+json'>
-{
-  "@context": "https://schema.org",
-  "@type": "WebSite",
-  "name": "FMovies",
-  "alternateName": ["FMovies.to", "FMovies to", "FMovie", "FMoviesto", "FMovies Free", "FMovies Official", "FMovies.is"],
-  "url": "https://fmovies.to",
-  "description": "FMovies - Watch Free Movies Online in HD on FMovies.to. Watch movies online free without registration. FMovies official site.",
-  "potentialAction": {
-    "@type": "SearchAction",
-    "target": "https://fmovies.to/search?q={search_term_string}",
-    "query-input": "required name=search_term_string"
+<!-- FMovies SEO Structured Data -->
+<script type="application/ld+json">
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "FMovies",
+    "alternateName": ["FMovies.to", "FMovies is", "FMovie", "FMovies Free", "FMovies Official"],
+    "url": "https://yourdomain.com",
+    "description": "Stream 10K+ movies and TV shows online for free in HD. No registration required.",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://yourdomain.com/#search?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "FMovies",
+    "url": "https://yourdomain.com",
+    "logo": "https://yourdomain.com/favicon.ico",
+    "sameAs": [
+      "https://twitter.com/fmovies",
+      "https://facebook.com/fmovies"
+    ]
   }
-}
+]
 </script>
 
 
@@ -1174,6 +1205,20 @@ background: linear-gradient(to top, rgba(6,6,8,0.9) 0%, rgba(6,6,8,0.1) 42%, tra
 
 </head>
 <body>
+
+<noscript>
+    <div style="padding: 40px; text-align: center; color: white;">
+        <h2>FMovies - Free Streaming</h2>
+        <p>Your browser does not support JavaScript. To watch free movies online in HD, please enable JavaScript.</p>
+        <nav>
+            <a href="#movies-action" style="color: #00ACC1; margin: 0 10px;">Action Movies</a>
+            <a href="#movies-comedy" style="color: #00ACC1; margin: 0 10px;">Comedy Movies</a>
+            <a href="#tv-drama" style="color: #00ACC1; margin: 0 10px;">Drama Series</a>
+            <a href="#tv-anime" style="color: #00ACC1; margin: 0 10px;">Anime</a>
+        </nav>
+    </div>
+</noscript>
+<h1 class="sr-only">Watch Free Movies Online in HD - FMovies</h1>
 <!-- ============================================================ PROGRESS BAR ============================================================ -->
 <div id='progress-bar-outer'>
 <div id='progress-bar-inner'></div>
@@ -1187,7 +1232,7 @@ background: linear-gradient(to top, rgba(6,6,8,0.9) 0%, rgba(6,6,8,0.1) 42%, tra
 </div>
 <!-- ============================================================ MODALS ============================================================ -->
 <div class='modal-veil' id='modal-veil'>
-<button class='modal-x-btn' onclick='Modals.closeAll()'><i class='fas fa-times'></i></button>
+<button class='modal-x-btn' aria-label='Close modal' onclick='Modals.closeAll()'><i class='fas fa-times'></i></button>
 <!-- QUICK VIEW -->
 <div class='qv-box' id='qv-box'>
 <div class='qv-layout'>
@@ -1292,14 +1337,14 @@ background: linear-gradient(to top, rgba(6,6,8,0.9) 0%, rgba(6,6,8,0.1) 42%, tra
 </div>
 </div>
 <div class='nav-right'>
-<button class='mobile-search-toggle' onclick='document.getElementById(&#39;main-search-wrap&#39;).classList.toggle(&#39;mobile-open&#39;)'>
+<button class='mobile-search-toggle' aria-label='Toggle mobile search' onclick='document.getElementById(&#39;main-search-wrap&#39;).classList.toggle(&#39;mobile-open&#39;)'>
 <i class='fas fa-search'></i>
 </button>
 <div class='search-wrap' id='main-search-wrap'>
 <div class='search-bar'>
-<i class='fas fa-search search-icon-btn' onclick='Search.execute()'></i>
+<i class='fas fa-search search-icon-btn' role='button' aria-label='Search' onclick='Search.execute()'></i>
 <input autocomplete='off' id='search-input' placeholder='Search movies, shows...' type='text'/>
-<i class='fas fa-microphone voice-btn' id='voice-btn' title='Voice Search'></i>
+<i class='fas fa-microphone voice-btn' role='button' aria-label='Voice search' id='voice-btn' title='Voice Search'></i>
 </div>
 <div class='search-dropdown' id='search-dropdown'>
 <div class='sdrop-label'>Quick Results</div>
@@ -1308,7 +1353,7 @@ background: linear-gradient(to top, rgba(6,6,8,0.9) 0%, rgba(6,6,8,0.1) 42%, tra
 <div class='sdrop-recent' id='sdrop-recent'></div>
 </div>
 </div>
-<button class='notif-btn' id='notif-btn' title='Notifications'>
+<button class='notif-btn' aria-label='Notifications' id='notif-btn' title='Notifications'>
 <i class='fas fa-bell'></i>
 <span class='notif-badge' id='notif-badge'></span>
 </button>
@@ -1356,7 +1401,7 @@ background: linear-gradient(to top, rgba(6,6,8,0.9) 0%, rgba(6,6,8,0.1) 42%, tra
 <div class='content-rows' id='continue-section' style='display:none'>
 <div class='row-section'>
 <div class='section-header'>
-<span class='section-title'><i class='fas fa-history'></i> Continue Watching</span>
+<h2 class='section-title'><i class='fas fa-history'></i> Continue Watching</h2>
 <button class='see-all-btn' onclick='ContinueWatch.clearAll()'>Clear All <i class='fas fa-trash-alt'></i></button>
 </div>
 <div class='hz-row' id='continue-row'></div>
@@ -1366,14 +1411,14 @@ background: linear-gradient(to top, rgba(6,6,8,0.9) 0%, rgba(6,6,8,0.1) 42%, tra
 <div class='content-rows' id='home-rows'>
 <div class='row-section'>
 <div class='section-header'>
-<span class='section-title'><i class='fas fa-calendar-alt'></i> New Releases</span>
+<h2 class='section-title'><i class='fas fa-calendar-alt'></i> New Releases</h2>
 <button class='see-all-btn' onclick='HomeRows.seeAll(&#39;new_releases&#39;,&#39;New Releases&#39;)'>See All <i class='fas fa-chevron-right'></i></button>
 </div>
 <div class='hz-row' id='row-new'></div>
 </div>
 <div class='row-section'>
 <div class='section-header'>
-<span class='section-title'><i class='fas fa-trophy'></i> Top Rated</span>
+<h2 class='section-title'><i class='fas fa-trophy'></i> Top Rated</h2>
 <button class='see-all-btn' onclick='HomeRows.seeAll(&#39;top_rated&#39;,&#39;Top Rated&#39;)'>See All <i class='fas fa-chevron-right'></i></button>
 </div>
 <div class='hz-row' id='row-top'></div>
@@ -1385,7 +1430,7 @@ background: linear-gradient(to top, rgba(6,6,8,0.9) 0%, rgba(6,6,8,0.1) 42%, tra
 <div class='collection-banner-content'>
 <div>
 <div class='collection-label'><i class='fas fa-fire'></i> Featured Collection</div>
-<div class='collection-title'>Action &amp; Thriller</div>
+<h2 class='collection-title'>Action &amp; Thriller</h2>
 <div class='collection-sub'>Heart-pounding movies &amp; shows hand-picked for you</div>
 </div>
 <button class='collection-cta'><i class='fas fa-play'></i> Explore Now</button>
@@ -1393,35 +1438,35 @@ background: linear-gradient(to top, rgba(6,6,8,0.9) 0%, rgba(6,6,8,0.1) 42%, tra
 </div>
 <div class='row-section'>
 <div class='section-header'>
-<span class='section-title'><i class='fas fa-language'></i> Bengali Cinema</span>
+<h2 class='section-title'><i class='fas fa-language'></i> Bengali Cinema</h2>
 <button class='see-all-btn' onclick='HomeRows.seeAll(&#39;bengali&#39;,&#39;Bengali Cinema&#39;)'>See All <i class='fas fa-chevron-right'></i></button>
 </div>
 <div class='hz-row' id='row-bengali'></div>
 </div>
 <div class='row-section'>
 <div class='section-header'>
-<span class='section-title'><i class='fas fa-film'></i> Hindi Movies</span>
+<h2 class='section-title'><i class='fas fa-film'></i> Hindi Movies</h2>
 <button class='see-all-btn' onclick='HomeRows.seeAll(&#39;hindi&#39;,&#39;Hindi Movies&#39;)'>See All <i class='fas fa-chevron-right'></i></button>
 </div>
 <div class='hz-row' id='row-hindi'></div>
 </div>
 <div class='row-section'>
 <div class='section-header'>
-<span class='section-title'><i class='fas fa-globe-asia'></i> Korean Drama</span>
+<h2 class='section-title'><i class='fas fa-globe-asia'></i> Korean Drama</h2>
 <button class='see-all-btn' onclick='HomeRows.seeAll(&#39;korean&#39;,&#39;Korean Drama&#39;)'>See All <i class='fas fa-chevron-right'></i></button>
 </div>
 <div class='hz-row' id='row-korean'></div>
 </div>
 <div class='row-section'>
 <div class='section-header'>
-<span class='section-title'><i class='fas fa-bolt'></i> Action &amp; Thriller</span>
+<h2 class='section-title'><i class='fas fa-bolt'></i> Action &amp; Thriller</h2>
 <button class='see-all-btn' onclick='HomeRows.seeAll(&#39;action&#39;,&#39;Action &amp; Thriller&#39;)'>See All <i class='fas fa-chevron-right'></i></button>
 </div>
 <div class='hz-row' id='row-action'></div>
 </div>
 <div class='row-section'>
 <div class='section-header'>
-<span class='section-title'><i class='fas fa-tv'></i> Popular Web Series</span>
+<h2 class='section-title'><i class='fas fa-tv'></i> Popular Web Series</h2>
 <button class='see-all-btn' onclick='HomeRows.seeAll(&#39;webseries&#39;,&#39;Web Series&#39;)'>See All <i class='fas fa-chevron-right'></i></button>
 </div>
 <div class='hz-row' id='row-web'></div>
@@ -1445,7 +1490,7 @@ background: linear-gradient(to top, rgba(6,6,8,0.9) 0%, rgba(6,6,8,0.1) 42%, tra
 <!-- Controls Bar -->
 <div class='controls-bar'>
 <div class='controls-left'>
-<div class='view-heading' id='view-heading'><i class='fas fa-fire'></i> Trending</div>
+<h1 class='view-heading' id='view-heading'><i class='fas fa-fire'></i> Trending</h1>
 <div class='lang-tabs'>
 <button class='lang-btn active' onclick='App.setLang(&#39;&#39;,event)'>All</button>
 <button class='lang-btn' onclick='App.setLang(&#39;en&#39;,event)'>English</button>
@@ -1455,9 +1500,9 @@ background: linear-gradient(to top, rgba(6,6,8,0.9) 0%, rgba(6,6,8,0.1) 42%, tra
 </div>
 </div>
 <div class='controls-right'>
-<button class='ctrl-btn' id='filter-toggle-btn' onclick='FilterPanel.toggle()' title='Filters'><i class='fas fa-sliders-h'></i></button>
+<button class='ctrl-btn' aria-label='Filter or layout control' id='filter-toggle-btn' onclick='FilterPanel.toggle()' title='Filters'><i class='fas fa-sliders-h'></i></button>
 <button class='ctrl-btn active' id='btn-grid-view' onclick='App.setView(&#39;grid&#39;)'><i class='fas fa-th-large'></i></button>
-<button class='ctrl-btn' id='btn-list-view' onclick='App.setView(&#39;list&#39;)'><i class='fas fa-list'></i></button>
+<button class='ctrl-btn' aria-label='Filter or layout control' id='btn-list-view' onclick='App.setView(&#39;list&#39;)'><i class='fas fa-list'></i></button>
 </div>
 </div>
 <!-- Filter Panel -->
@@ -1509,44 +1554,44 @@ background: linear-gradient(to top, rgba(6,6,8,0.9) 0%, rgba(6,6,8,0.1) 42%, tra
       <p>FMovies is the top free streaming website to watch movies online free in HD without registration. Stream 10K+ movies &amp; TV shows - FMovies.to, FMovies is, FMovie, FMovies free official site.</p>
       <p style='font-size:12px; color:var(--text-muted);'>Watch free movies online - Action, Comedy, Drama, Horror, Sci-Fi, Top Rated only on FMovies.to official 2026.</p>
       <div class='fm-footer-social'>
-        <a href='javascript:void(0)' onclick='App.goHome()' title='Home'><i class='fas fa-home'></i></a>
-        <a href='javascript:void(0)' onclick='Search.commit("FMovies")' title='Search'><i class='fas fa-search'></i></a>
-        <a href='javascript:void(0)' onclick='InfoPages.show("about")' title='About'><i class='fas fa-info-circle'></i></a>
-        <a href='javascript:void(0)' onclick='InfoPages.show("contact")' title='Contact'><i class='fas fa-envelope'></i></a>
-        <a href='javascript:void(0)' onclick='InfoPages.show("privacy")' title='Privacy'><i class='fas fa-shield-alt'></i></a>
+        <a href='#home' onclick='App.goHome()' title='Home'><i class='fas fa-home'></i></a>
+        <a href='#search' onclick='Search.commit("FMovies")' title='Search'><i class='fas fa-search'></i></a>
+        <a href='#info-about' onclick='InfoPages.show(\"about\")' title='About'><i class='fas fa-info-circle'></i></a>
+        <a href='#info-contact' onclick='InfoPages.show(\"contact\")' title='Contact'><i class='fas fa-envelope'></i></a>
+        <a href='#info-privacy' onclick='InfoPages.show(\"privacy\")' title='Privacy'><i class='fas fa-shield-alt'></i></a>
       </div>
     </div>
     <div class='fm-footer-col'>
-      <h4>Movies</h4>
+      <h3>Movies</h3>
       <div class='fm-footer-links'>
-        <a href='javascript:void(0)' onclick='FooterNav.movies("action"); return false;'><i class='fas fa-chevron-right'></i> Action Movies</a>
-        <a href='javascript:void(0)' onclick='FooterNav.movies("comedy"); return false;'><i class='fas fa-chevron-right'></i> Comedy Movies</a>
-        <a href='javascript:void(0)' onclick='FooterNav.movies("drama"); return false;'><i class='fas fa-chevron-right'></i> Drama Films</a>
-        <a href='javascript:void(0)' onclick='FooterNav.movies("horror"); return false;'><i class='fas fa-chevron-right'></i> Horror Movies</a>
-        <a href='javascript:void(0)' onclick='FooterNav.movies("scifi"); return false;'><i class='fas fa-chevron-right'></i> Sci-Fi Films</a>
-        <a href='javascript:void(0)' onclick='FooterNav.movies("toprated"); return false;'><i class='fas fa-chevron-right'></i> Top Rated</a>
+        <a href='#movies-action' onclick='FooterNav.movies(\"action\"); return false;'><i class='fas fa-chevron-right'></i> Action Movies</a>
+        <a href='#movies-comedy' onclick='FooterNav.movies(\"comedy\"); return false;'><i class='fas fa-chevron-right'></i> Comedy Movies</a>
+        <a href='#movies-drama' onclick='FooterNav.movies(\"drama\"); return false;'><i class='fas fa-chevron-right'></i> Drama Films</a>
+        <a href='#movies-horror' onclick='FooterNav.movies(\"horror\"); return false;'><i class='fas fa-chevron-right'></i> Horror Movies</a>
+        <a href='#movies-scifi' onclick='FooterNav.movies(\"scifi\"); return false;'><i class='fas fa-chevron-right'></i> Sci-Fi Films</a>
+        <a href='#movies-toprated' onclick='FooterNav.movies(\"toprated\"); return false;'><i class='fas fa-chevron-right'></i> Top Rated</a>
       </div>
     </div>
     <div class='fm-footer-col'>
-      <h4>TV Shows</h4>
+      <h3>TV Shows</h3>
       <div class='fm-footer-links'>
-        <a href='javascript:void(0)' onclick='FooterNav.tv("drama"); return false;'><i class='fas fa-chevron-right'></i> Drama Series</a>
-        <a href='javascript:void(0)' onclick='FooterNav.tv("crime"); return false;'><i class='fas fa-chevron-right'></i> Crime Shows</a>
-        <a href='javascript:void(0)' onclick='FooterNav.tv("comedy"); return false;'><i class='fas fa-chevron-right'></i> Comedy Series</a>
-        <a href='javascript:void(0)' onclick='FooterNav.tv("scifi"); return false;'><i class='fas fa-chevron-right'></i> Sci-Fi Shows</a>
-        <a href='javascript:void(0)' onclick='FooterNav.tv("anime"); return false;'><i class='fas fa-chevron-right'></i> Anime</a>
-        <a href='javascript:void(0)' onclick='FooterNav.tv("trending"); return false;'><i class='fas fa-chevron-right'></i> Trending</a>
+        <a href='#tv-drama' onclick='FooterNav.tv(\"drama\"); return false;'><i class='fas fa-chevron-right'></i> Drama Series</a>
+        <a href='#tv-crime' onclick='FooterNav.tv(\"crime\"); return false;'><i class='fas fa-chevron-right'></i> Crime Shows</a>
+        <a href='#tv-comedy' onclick='FooterNav.tv(\"comedy\"); return false;'><i class='fas fa-chevron-right'></i> Comedy Series</a>
+        <a href='#tv-scifi' onclick='FooterNav.tv(\"scifi\"); return false;'><i class='fas fa-chevron-right'></i> Sci-Fi Shows</a>
+        <a href='#tv-anime' onclick='FooterNav.tv(\"anime\"); return false;'><i class='fas fa-chevron-right'></i> Anime</a>
+        <a href='#tv-trending' onclick='FooterNav.tv(\"trending\"); return false;'><i class='fas fa-chevron-right'></i> Trending</a>
       </div>
     </div>
     <div class='fm-footer-col'>
-      <h4>Info</h4>
+      <h3>Info</h3>
       <div class='fm-footer-links'>
-        <a href='javascript:void(0)' onclick='InfoPages.show("about"); return false;'><i class='fas fa-chevron-right'></i> About Us</a>
-        <a href='javascript:void(0)' onclick='InfoPages.show("contact"); return false;'><i class='fas fa-chevron-right'></i> Contact</a>
-        <a href='javascript:void(0)' onclick='InfoPages.show("dmca"); return false;'><i class='fas fa-chevron-right'></i> DMCA</a>
-        <a href='javascript:void(0)' onclick='InfoPages.show("privacy"); return false;'><i class='fas fa-chevron-right'></i> Privacy Policy</a>
-        <a href='javascript:void(0)' onclick='InfoPages.show("terms"); return false;'><i class='fas fa-chevron-right'></i> Terms of Service</a>
-        <a href='javascript:void(0)' onclick='InfoPages.show("disclaimer"); return false;'><i class='fas fa-chevron-right'></i> Disclaimer</a>
+        <a href='#info-about' onclick='InfoPages.show(\"about\"); return false;'><i class='fas fa-chevron-right'></i> About Us</a>
+        <a href='#info-contact' onclick='InfoPages.show(\"contact\"); return false;'><i class='fas fa-chevron-right'></i> Contact</a>
+        <a href='#info-dmca' onclick='InfoPages.show(\"dmca\"); return false;'><i class='fas fa-chevron-right'></i> DMCA</a>
+        <a href='#info-privacy' onclick='InfoPages.show(\"privacy\"); return false;'><i class='fas fa-chevron-right'></i> Privacy Policy</a>
+        <a href='#info-terms' onclick='InfoPages.show(\"terms\"); return false;'><i class='fas fa-chevron-right'></i> Terms of Service</a>
+        <a href='#info-disclaimer' onclick='InfoPages.show(\"disclaimer\"); return false;'><i class='fas fa-chevron-right'></i> Disclaimer</a>
       </div>
     </div>
   </div>
