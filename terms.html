@@ -11,7 +11,7 @@
 <meta content='https://yourdomain.com/' property='og:url'/>
 <meta content='playflix1' property='og:title'/>
 <meta content='FMovies - Watch movies online free in full HD without registration. FMovies.to official site.' property='og:description'/>
-<title>Watch Free Movies Online in HD | FMovies</title>
+<title>Terms of Service | FMovies</title>
 <meta name="google-site-verification" content="ADD_YOUR_GSC_VERIFICATION_CODE_HERE" />
 <meta content='Stream 10K+ movies and TV shows online for free in HD. No registration required. Find action, comedy, horror, and more on FMovies.' name='description'/>
 <meta content='fmovies, fmovies.to, fmovies to, fmovies is, fmovie, fmoviesto, f movies, fmovies free, fmovies official, fmovies unblocked, fmovies site, fmovies hd, free movies, free movies online, watch movies online free, watch movies online, online movies, movie online, full movies online free, fmovies 2025, fmovies 2026, 123movies, fmovies app, fmovies download, fmovies streaming, watch free movies' name='keywords'/>
@@ -1361,187 +1361,14 @@ background: linear-gradient(to top, rgba(6,6,8,0.9) 0%, rgba(6,6,8,0.1) 42%, tra
 </div>
 </nav>
 <!-- ============================================================ MAIN APP VIEW ============================================================ -->
-<div id='app-view'>
-<!-- OTT PLATFORMS -->
-<div class='ott-section'>
-<div class='ott-label'><i class='fas fa-bolt' style='color:var(--brand-gold)'></i> Explore Platforms</div>
-<div class='ott-scroll' id='ott-tabs'></div>
-</div>
-<!-- HERO SLIDER -->
-<div class='hero-section' id='hero-wrap'>
-<div class='hero-stage'>
-<div class='hero-track' id='hero-track'></div>
-<div class='hero-controls'>
-<div class='hero-dots' id='hero-dots'></div>
-</div>
-</div>
-</div>
-<!-- STATS BAR -->
-<div class='stats-bar' id='stats-bar'>
-<div class='stat-item'>
-<span class='stat-num' id='stat-movies'>10K+</span>
-<span class='stat-label'>Movies</span>
-</div>
-<div class='stat-divider'></div>
-<div class='stat-item'>
-<span class='stat-num' id='stat-shows'>5K+</span>
-<span class='stat-label'>TV Shows</span>
-</div>
-<div class='stat-divider'></div>
-<div class='stat-item'>
-<span class='stat-num'>4K</span>
-<span class='stat-label'>HDR Quality</span>
-</div>
-<div class='stat-divider'></div>
-<div class='stat-item'>
-<span class='stat-num'>Free</span>
-<span class='stat-label'>No Subscription</span>
-</div>
-</div>
-<!-- CONTINUE WATCHING (shown if user has history) -->
-<div class='content-rows' id='continue-section' style='display:none'>
-<div class='row-section'>
-<div class='section-header'>
-<h2 class='section-title'><i class='fas fa-history'></i> Continue Watching</h2>
-<button class='see-all-btn' onclick='ContinueWatch.clearAll()'>Clear All <i class='fas fa-trash-alt'></i></button>
-</div>
-<div class='hz-row' id='continue-row'></div>
-</div>
-</div>
-<!-- HOME CONTENT ROWS -->
-<div class='content-rows' id='home-rows'>
-<div class='row-section'>
-<div class='section-header'>
-<h2 class='section-title'><i class='fas fa-calendar-alt'></i> New Releases</h2>
-<button class='see-all-btn' onclick='HomeRows.seeAll(&#39;new_releases&#39;,&#39;New Releases&#39;)'>See All <i class='fas fa-chevron-right'></i></button>
-</div>
-<div class='hz-row' id='row-new'></div>
-</div>
-<div class='row-section'>
-<div class='section-header'>
-<h2 class='section-title'><i class='fas fa-trophy'></i> Top Rated</h2>
-<button class='see-all-btn' onclick='HomeRows.seeAll(&#39;top_rated&#39;,&#39;Top Rated&#39;)'>See All <i class='fas fa-chevron-right'></i></button>
-</div>
-<div class='hz-row' id='row-top'></div>
-</div>
-<!-- FEATURED COLLECTION BANNER -->
-<div class='collection-banner' onclick='HomeRows.seeAll(&#39;action&#39;,&#39;Action &amp; Thriller&#39;)'>
-<div class='collection-banner-bg' id='collection-bg'></div>
-<div class='collection-banner-glow'></div>
-<div class='collection-banner-content'>
-<div>
-<div class='collection-label'><i class='fas fa-fire'></i> Featured Collection</div>
-<h2 class='collection-title'>Action &amp; Thriller</h2>
-<div class='collection-sub'>Heart-pounding movies &amp; shows hand-picked for you</div>
-</div>
-<button class='collection-cta'><i class='fas fa-play'></i> Explore Now</button>
-</div>
-</div>
-<div class='row-section'>
-<div class='section-header'>
-<h2 class='section-title'><i class='fas fa-language'></i> Bengali Cinema</h2>
-<button class='see-all-btn' onclick='HomeRows.seeAll(&#39;bengali&#39;,&#39;Bengali Cinema&#39;)'>See All <i class='fas fa-chevron-right'></i></button>
-</div>
-<div class='hz-row' id='row-bengali'></div>
-</div>
-<div class='row-section'>
-<div class='section-header'>
-<h2 class='section-title'><i class='fas fa-film'></i> Hindi Movies</h2>
-<button class='see-all-btn' onclick='HomeRows.seeAll(&#39;hindi&#39;,&#39;Hindi Movies&#39;)'>See All <i class='fas fa-chevron-right'></i></button>
-</div>
-<div class='hz-row' id='row-hindi'></div>
-</div>
-<div class='row-section'>
-<div class='section-header'>
-<h2 class='section-title'><i class='fas fa-globe-asia'></i> Korean Drama</h2>
-<button class='see-all-btn' onclick='HomeRows.seeAll(&#39;korean&#39;,&#39;Korean Drama&#39;)'>See All <i class='fas fa-chevron-right'></i></button>
-</div>
-<div class='hz-row' id='row-korean'></div>
-</div>
-<div class='row-section'>
-<div class='section-header'>
-<h2 class='section-title'><i class='fas fa-bolt'></i> Action &amp; Thriller</h2>
-<button class='see-all-btn' onclick='HomeRows.seeAll(&#39;action&#39;,&#39;Action &amp; Thriller&#39;)'>See All <i class='fas fa-chevron-right'></i></button>
-</div>
-<div class='hz-row' id='row-action'></div>
-</div>
-<div class='row-section'>
-<div class='section-header'>
-<h2 class='section-title'><i class='fas fa-tv'></i> Popular Web Series</h2>
-<button class='see-all-btn' onclick='HomeRows.seeAll(&#39;webseries&#39;,&#39;Web Series&#39;)'>See All <i class='fas fa-chevron-right'></i></button>
-</div>
-<div class='hz-row' id='row-web'></div>
-</div>
-</div>
-<!-- BROWSE / SEARCH VIEW (hidden by default) -->
-<div id='browse-view' style='display:none'>
-<!-- Mood Filters -->
-<div class='mood-bar' id='mood-bar'>
-<div class='mood-chip active' data-mood='' onclick='Mood.set(this,&#39;&#39;)'><span class='mood-emoji'>🎬</span> All</div>
-<div class='mood-chip' data-mood='action' onclick='Mood.set(this,&#39;action&#39;)'><span class='mood-emoji'>💥</span> Action</div>
-<div class='mood-chip' data-mood='comedy' onclick='Mood.set(this,&#39;comedy&#39;)'><span class='mood-emoji'>😂</span> Comedy</div>
-<div class='mood-chip' data-mood='romance' onclick='Mood.set(this,&#39;romance&#39;)'><span class='mood-emoji'>&#10084;&#65039;</span> Romance</div>
-<div class='mood-chip' data-mood='horror' onclick='Mood.set(this,&#39;horror&#39;)'><span class='mood-emoji'>👻</span> Horror</div>
-<div class='mood-chip' data-mood='scifi' onclick='Mood.set(this,&#39;scifi&#39;)'><span class='mood-emoji'>🚀</span> Sci-Fi</div>
-<div class='mood-chip' data-mood='thriller' onclick='Mood.set(this,&#39;thriller&#39;)'><span class='mood-emoji'>🔪</span> Thriller</div>
-<div class='mood-chip' data-mood='animation' onclick='Mood.set(this,&#39;animation&#39;)'><span class='mood-emoji'>🎨</span> Animation</div>
-<div class='mood-chip' data-mood='documentary' onclick='Mood.set(this,&#39;documentary&#39;)'><span class='mood-emoji'>📽&#65039;</span> Documentary</div>
-<div class='mood-chip' data-mood='family' onclick='Mood.set(this,&#39;family&#39;)'><span class='mood-emoji'>👨&#8205;👩&#8205;👧</span> Family</div>
-</div>
-<!-- Controls Bar -->
-<div class='controls-bar'>
-<div class='controls-left'>
-<h1 class='view-heading' id='view-heading'><i class='fas fa-fire'></i> Trending</h1>
-<div class='lang-tabs'>
-<button class='lang-btn active' onclick='App.setLang(&#39;&#39;,event)'>All</button>
-<button class='lang-btn' onclick='App.setLang(&#39;en&#39;,event)'>English</button>
-<button class='lang-btn' onclick='App.setLang(&#39;hi&#39;,event)'>Hindi</button>
-<button class='lang-btn' onclick='App.setLang(&#39;bn&#39;,event)'>Bengali</button>
-<button class='lang-btn' onclick='App.setLang(&#39;ko&#39;,event)'>Korean</button>
-</div>
-</div>
-<div class='controls-right'>
-<button class='ctrl-btn' aria-label='Filter or layout control' id='filter-toggle-btn' onclick='FilterPanel.toggle()' title='Filters'><i class='fas fa-sliders-h'></i></button>
-<button class='ctrl-btn active' id='btn-grid-view' onclick='App.setView(&#39;grid&#39;)'><i class='fas fa-th-large'></i></button>
-<button class='ctrl-btn' aria-label='Filter or layout control' id='btn-list-view' onclick='App.setView(&#39;list&#39;)'><i class='fas fa-list'></i></button>
-</div>
-</div>
-<!-- Filter Panel -->
-<div class='filter-panel' id='filter-panel'>
-<div class='filter-grid'>
-<div class='filter-group'>
-<h4>Genre</h4>
-<div class='genre-cloud' id='genre-cloud'></div>
-</div>
-<div class='filter-group'>
-<h4>Release Year</h4>
-<div class='range-wrap'>
-<input class='range-slider' id='filter-year' max='2030' min='1990' oninput='document.getElementById(&#39;yr-val&#39;).textContent=this.value' type='range' value='2024'/>
-<div class='range-display'><span>1990</span><span class='range-val' id='yr-val'>2024</span></div>
-</div>
-</div>
-<div class='filter-group'>
-<h4>Min. Rating</h4>
-<div class='range-wrap'>
-<input class='range-slider' id='filter-rating' max='10' min='0' oninput='document.getElementById(&#39;rt-val&#39;).textContent=this.value' step='0.5' type='range' value='5'/>
-<div class='range-display'><span>0</span><span class='range-val' id='rt-val'>5.0</span></div>
-</div>
-</div>
-</div>
-<div class='filter-actions'>
-<button class='btn-ghost' onclick='FilterPanel.reset()'>Reset Filters</button>
-<button class='btn-primary' onclick='FilterPanel.apply()'>Apply Filters</button>
-</div>
-</div>
-<!-- Media Grid -->
-<div class='media-section'>
-<div class='media-grid' id='media-grid'></div>
-<div class='load-more-area' id='load-more-area'>
-<button class='btn-load-more' id='btn-load-more' onclick='App.loadMore()'><i class='fas fa-sync-alt'></i> Load More</button>
-</div>
-</div>
-</div>
-</div>
+<div id='app-view' style='min-height: 70vh;'>
+    <div style='padding: 120px 4% 60px; max-width: 900px; margin: 0 auto; color: var(--text-secondary); line-height: 1.8; font-size: 16px;'>
+        <h1 style='color: white; font-size: 42px; margin-bottom: 32px; font-weight: 900; letter-spacing: -1px;'>Terms of Service</h1>
+        <div style='background: var(--bg-surface-2); padding: 40px; border-radius: var(--radius-lg); border: 1px solid var(--border-light);'>
+            <p>By accessing and using FMovies, you agree to the following terms:</p><p style='margin-top:16px'>• FMovies operates as a streaming search engine and aggregation service. We do not host any media files on our servers.<br/>• The service is provided "as is" for personal, non-commercial use only.<br/>• You may not use automated scripts or scrapers to extract data from our website.<br/>• We reserve the right to modify these terms at any time.</p>
+        </div>
+    </div>
+    </div>
 
 <!-- FMovies Full Footer with Movies / TV Shows / Info -->
 
@@ -2645,7 +2472,7 @@ document.addEventListener('DOMContentLoaded', () => {
 /* ----------------------------------------------------------------
    BOOT
 ---------------------------------------------------------------- */
-App.init();
+// Static page, no SPA init needed.
 
 
 </script>
