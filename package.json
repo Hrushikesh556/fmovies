@@ -1,0 +1,9 @@
+{
+  "name": "fmovies-vercel",
+  "version": "1.0.0",
+  "description": "FMovies Vercel deployment",
+  "scripts": {
+    "start": "npx serve ."
+  },
+  "dependencies": {}
+}
